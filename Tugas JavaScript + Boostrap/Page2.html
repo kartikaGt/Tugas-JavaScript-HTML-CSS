@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>TUGAS JAVASCRIPT</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/offcanvas-navbar/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">TUGAS JAVASCRIPT</a>
+    <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Konversi Suhu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Page1.html">Konversi Diskon</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">nilai angka ke nilai huruf</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Page3.html">hari dan tanggal</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
+    <img class="me-3" src="foto/1.jpeg" alt="" width="80" height="80">
+    <div class="lh-">
+      <h1 class="h6 mb-0 text-white lh-1">Kartika Mega Safitri</h1>
+      <h1 class="h6 mb-0 text-white lh-1">Pendidikan Teknik Informatika <b>PTI 2020</b></h1>
+      <h1 class="h6 mb-0 text-white lh-1"><b>NIM :</b> 20050974061 </h1>
+    </div>
+  </div>
+
+  <div class="my-3 p-3 bg-body rounded shadow-sm">
+    <div class="text-center">
+      <h6 class="text-center">hitung Nilai</h6>
+      <SCRIPT language="JavaScript">
+        function test () {
+        var val1=document.kirim.T1.value
+        if(val1>=0&&48)
+          document.kirim.T2.value="E"
+        if(val1>=50&&59)
+          document.kirim.T2.value="D"
+        if(val1>=60&&69)
+          document.kirim.T2.value="C"
+        if(val1>=70&&79)
+          document.kirim.T2.value="B"
+        if(val1>=80&&100)
+          document.kirim.T2.value="A"
+        }
+          </SCRIPT>
+        <body>
+        <form method="POST" name="kirim">
+          <p>NILAI ANGKA <input type="text" name="T1" size="20">
+          NILAI HURUF <input type="text" name="T2" size="20">
+          </p>
+          <p><input type="button" value="CEK" name="B1" onclick=test()>
+          </p>
+        </form>
+      </div>
+  </div>
+</main>
+
+
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="offcanvas.js"></script>
+  </body>
+</html>

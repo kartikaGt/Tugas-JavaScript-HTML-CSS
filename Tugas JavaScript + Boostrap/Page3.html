@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>TUGAS JAVASCRIPT</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/offcanvas-navbar/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">TUGAS JAVASCRIPT</a>
+    <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Konversi Suhu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Page1.html">Konversi Diskon</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Page2.html">nilai angka ke nilai huruf</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  href="#">hari dan tanggal</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
+    <img class="me-3" src="foto/1.jpeg" alt="" width="80" height="80">
+    <div class="lh-">
+      <h1 class="h6 mb-0 text-white lh-1">Kartika Mega Safitri</h1>
+      <h1 class="h6 mb-0 text-white lh-1">Pendidikan Teknik Informatika <b>PTI 2020</b></h1>
+      <h1 class="h6 mb-0 text-white lh-1"><b>NIM :</b> 20050974061 </h1>
+    </div>
+  </div>
+
+  <div class="my-3 p-3 bg-body rounded shadow-sm">
+    <h6 class="text-center">Hari ini</h6>
+    <div class="text-center">
+      <script type='text/javascript'>
+
+        var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+        
+        var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+        
+        var date = new Date();
+        
+        var day = date.getDate();
+        
+        var month = date.getMonth();
+        
+        var thisDay = date.getDay(),
+        
+            thisDay = myDays[thisDay];
+        
+        var yy = date.getYear();
+        
+        var year = (yy < 1000) ? yy + 1900 : yy;
+        
+        document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+        
+    </script>
+    </div>
+  </div>
+</main>
+
+
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="offcanvas.js"></script>
+  </body>
+</html>
