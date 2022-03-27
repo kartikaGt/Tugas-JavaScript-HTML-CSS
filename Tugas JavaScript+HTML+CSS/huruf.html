@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huruf-Tugas Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">Tugas Javascript</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Konversi Suhu</a></li>
+                    <li><a href="diskon.html">Konversi Diskon</a></li>
+                    <li><a href="huruf.html">Nilai Angka ke Nilai Huruf</a></li>
+                    <li><a href="tanggal.html">Hari dan Tanggal</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <h3>Nilai Angka ke Nilai Huruf</h3>
+        </header>
+        <form method="POST" name="kirim">
+            <p>NILAI ANGKA<input type="text" name="T1" size="20">NILAI HURUF<input type="text" name="T2" size="20"></p>
+            <p><input type="button" value="CEK" name="B1" onclick=test()></p>
+        </form>
+        <script>
+            function test(){
+                var val1 = document.kirim.T1.value;
+                if(val1>=0 && val1<=49)
+                    document.kirim.T2.value = "E";
+                if(val1>=50 && val1<=59)
+                    document.kirim.T2.value = "D";
+                if(val1>=60 && val1<=69)
+                    document.kirim.T2.value = "C";
+                if(val1>=70 && val1<=79)
+                    document.kirim.T2.value = "B";
+                if(val1>=80 && val1<=100)
+                    document.kirim.T2.value = "A";
+                if(val1<=0)
+                    alert("Nilai tidak valid");
+                if(val1>=100)
+                    alert("Nilai tidak valid");
+            }
+        </script>
+    </main>
+</body>
+</html>

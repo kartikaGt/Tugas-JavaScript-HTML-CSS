@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanggal-Tugas Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">Tugas Javascript</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Konversi Suhu</a></li>
+                    <li><a href="diskon.html">Konversi Diskon</a></li>
+                    <li><a href="huruf.html">Nilai Angka ke Nilai Huruf</a></li>
+                    <li><a href="tanggal.html">Hari dan Tanggal</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <h4 class="text-center">Hari Ini</h4>
+        </header>
+        <center><h5>
+            <script>
+                var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+                var date = new Date();        
+                var day = date.getDate();        
+                var month = date.getMonth();        
+                var thisDay = date.getDay(),        
+                    thisDay = myDays[thisDay];        
+                var yy = date.getYear();        
+                var year = (yy < 1000) ? yy + 1900 : yy;        
+                document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+            </script>
+        </h5></center>
+    </main>
+</body>
+</html>
